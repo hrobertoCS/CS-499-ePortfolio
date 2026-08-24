@@ -2,7 +2,19 @@
 
 Content:
 Professional Self-Assessment
-Code Review
+
+
+## MacroTrackerRPG Application Walkthrough
+
+https://www.youtube.com/watch?v=hFHEiZjz8LE
+
+
+
+## Code Review
+
+https://youtu.be/l7Qx68OSE4A 
+
+
 
 
 ## Enhancement One: Software Design and Engineering 
@@ -24,13 +36,6 @@ Original: [macro_db.py](ePortfolio/enhancement-three/original/macro_db.py)
 Enhanced: [db.ts](ePortfolio/enhancement-three/enhanced/db.ts) · [validation.ts](ePortfolio/enhancement-three/enhanced/validation.ts) · [CharacterContext.tsx](ePortfolio/enhancement-three/enhanced/CharacterContext.tsx) · [macroTypes.ts](ePortfolio/enhancement-three/enhanced/macroTypes.ts)
 
 Professional Self-Assessment:
-
-
-
-
-
-Code Review URL
-https://youtu.be/l7Qx68OSE4A 
 
 
 
