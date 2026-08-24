@@ -34,18 +34,11 @@ https://youtu.be/l7Qx68OSE4A
 
 
 
-Enhancement One:
-
-
-Enhancement Two:
 
 
 
-Enhancement Three:
+### Narrative One:
 
-
-
-Narrative One:
 [Milestone 2 Narrative (2).docx](https://github.com/user-attachments/files/31359775/Milestone.2.Narrative.2.docx)
 1.	Briefly describe the artifact. What is it? When was it created?
 The artifact I selected for this enhancement is the home screen and navigation structure of MacroTrackerRPG app. This is a React Native app I began developing in early 2026. MacroTrackerRPG approaches macro tracking as an RPG with a character progression system tied to logging your macros. This approach is aimed at users who struggle to stay consistent in tracking their macros and nutrition goals. By turning macro tracking into a game, it incentivizes consistency. 
@@ -55,12 +48,13 @@ I chose this artifact because it is a personal project that I am actively develo
 I met the original course outcome I had selected, outcome four by improving the application architecture using recommended techniques and accomplishing industry-specific goals. By replacing repetitive blocks of code with reusable components and implementing state management with React Context, I made MacroTrackerRPG much easier to maintain and more aligned with industry standards. I also made progress in meeting outcome three with this enhancement by managing design trade-offs like choosing to use React Context rather than a state management library like Redux because it was not needed for this app's scale. Based on the feedback I received, I have updated my outcome-coverage plan. I am making progress towards outcome two by providing professional-quality documentation with the code review, narratives, and the ePortfolio. I will continue making progress towards outcome three by refactoring my XP algorithm and converting Python files to TypeScript in my next enhancement. I will address outcome five with the database enhancement where I will use input validation, parameterized queries, and Defense in Depth. Finally, I will address outcome one with the completion of the ePortfolio and the professional self-assessment where I will explain and document design decisions. 
 4. Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
 While working on my enhancement, I learned that certain issues or bugs require restructuring rather than adding or editing code. While I was adding tap, hold, and drag gestures to the MacroStat component I originally had all three gestures modifying the same state to control whether expanded values were shown. This caused one gesture to overwrite the last and led to the state being broken and buggy. I attempted to debug this issue and continued trying several solutions, with each breaking something else. I then realized that the solution that was best suited for this issue was to give each gesture its own state to manage and update. One of the biggest challenges I faced was understanding how animation and rendering run on separate threads and that I would have to schedule an update on the JavaScript thread rather than directly updating the React State with the gesture handlers. I also struggled with setting up the React Context layer and had to learn the proper structure including using a hook to prevent direct access.
-<img width="468" height="643" alt="image" src="https://github.com/user-attachments/assets/fa487ba5-35fe-4011-a331-5c0c46a48ead" />
 
 
 
 
-Narrative Two:
+
+### Narrative Two:
+
 [Milestone Three Narrative (3).docx](https://github.com/user-attachments/files/31359796/Milestone.Three.Narrative.3.docx)
 1.	Briefly describe the artifact. What is it? When was it created?
 
@@ -77,7 +71,17 @@ I met the course outcome that I had originally planned for this enhancement whic
 4.	Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
 
 As I was modifying this artifact, I learned that even though my program logic may be sound and correct in one instance, it can still not work well when used in a different environment. In the original Python file for my character object, the character updated its XP directly in the same file and although this worked for my Python prototype, it does not work for the React Native app. React is not able to detect the change when the character itself is updated because it can only detect when it is given a different object. As a result, each time the character's XP or level is updated, it must return a new Character instead of modifying the existing one. 
-<img width="468" height="656" alt="image" src="https://github.com/user-attachments/assets/67aedeb9-857e-4c98-8b39-ec99295b7c28" />
 
 
-Narrative Three:
+
+### Narrative Three:
+
+1.	Briefly describe the artifact. What is it? When was it created?
+The artifact I chose for this enhancement is the macro database Python file for MacroTrackerRPG. It uses SQLite to store user daily macros and contains functions to save daily logs and retrieve past logs. I created this artifact a couple of months ago. 
+2.	Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved?
+I chose this artifact because it demonstrates my ability to design a relational database. The components that showcase my skills are the design of the schema and the functions used to read and write to it. The original file stored logs into a single table and did not connect to character data. The enhanced version expands the database into a relational database that has multiple tables and connects the character and daily logs. I also secured the database using Defense in Depth with an input validation layer that checks that the macro value is a number, not negative, and within a set limit. The second layer is using parameterized queries to separate the SQL commands and users value in order to prevent injection. 
+3.	Did you meet the course outcomes you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
+I met the course outcome I planned for this enhancement which was outcome five. I developed a security mindset by designing against vulnerabilities within the database. The parameterized queries prevent SQL injection and the input validation stops invalid data from reaching the database. I also made progress towards outcome two with the narrative and comments throughout my code. I will complete outcome one with the completion of the eportfolio and professional assessment.
+4.	Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+As I was improving the artifact I learned that TypeScript cannot check data types within a SQL string. When i made errors in my query it was not able to catch the mistakes as usual and this definitely proved to be confusing because the code compiled without any warnings.
+
