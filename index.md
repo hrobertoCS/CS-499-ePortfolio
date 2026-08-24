@@ -1,21 +1,23 @@
-#CS 499 Computer Science Capstone ePortfolio
+# CS 499 Computer Science Capstone ePortfolio
 
 Content:
 Professional Self-Assessment
 Code Review
-Enhancement One: Software Design and Engineering 
+
+
+## Enhancement One: Software Design and Engineering 
 
 Original: [index.tsx](ePortfolio/enhancement-one/original/index.tsx)
 
 Enhanced: [index.tsx](ePortfolio/enhancement-one/enhanced/index.tsx) · [MacroStat.tsx](ePortfolio/enhancement-one/enhanced/MacroStat.tsx) · [XPBar.tsx](ePortfolio/enhancement-one/enhanced/XPBar.tsx) · [MacroContext.tsx](ePortfolio/enhancement-one/enhanced/MacroContext.tsx) · [character.tsx](ePortfolio/enhancement-one/enhanced/character.tsx) · [_layout.tsx](ePortfolio/enhancement-one/enhanced/_layout.tsx)
 
-Enhancement Two: Algorithms and Data Structures
+## Enhancement Two: Algorithms and Data Structures
 
 Original: [macro_logger.py](ePortfolio/enhancement-two/original/macro_logger.py) · [character.py](ePortfolio/enhancement-two/original/character.py)
 
 Enhanced: [progressionEngine.ts](ePortfolio/enhancement-two/enhanced/progressionEngine.ts) · [progressionRules.ts](ePortfolio/enhancement-two/enhanced/progressionRules.ts) · [progressionTypes.ts](ePortfolio/enhancement-two/enhanced/progressionTypes.ts) · [Character.ts](ePortfolio/enhancement-two/enhanced/Character.ts) · [CharacterContext.tsx](ePortfolio/enhancement-two/enhanced/CharacterContext.tsx) · [macroTypes.ts](ePortfolio/enhancement-two/enhanced/macroTypes.ts)
 
-Enhancement Three: Databases
+## Enhancement Three: Databases
 
 Original: [macro_db.py](ePortfolio/enhancement-three/original/macro_db.py)
 
